@@ -13,10 +13,16 @@ Below is the method in details for both the Windows 7 32-Bit And 64-bit Version.
 
 ## Command Prompt Tricks to Extend Windows 7 Trial Period
 
-1. Type “cmd” in the Windows 7 start menu search box then right click on ‘Command Prompt’ and chose ‘Run as administrator’. You can also run the command prompt as administrator by typing “cmd” in the start menu search box and then pressing the ```Shift + Ctrl + Enter``` key combination from the keyboard.
+1. Type ```cmd``` in the Windows 7 start menu search box then right click on ‘Command Prompt’ and chose ‘Run as administrator’. You can also run the command prompt as administrator by typing “cmd” in the start menu search box and then pressing the ```Shift + Ctrl + Enter``` key combination from the keyboard.
+
+![windows-7-command-prompt](https://cloud.githubusercontent.com/assets/139233/4180133/a8ece7a0-36e8-11e4-85c7-bd2fbfe824aa.png)
+
 Note: You may be asked for a password. If so then put it and hit ‘Enter’.
 
 2. In the command prompt, type the following command: ```slmgr -rearm```
+
+![windows-7-command](https://cloud.githubusercontent.com/assets/139233/4180134/aef28006-36e8-11e4-84ec-e957378e9c43.png)
+
 3. Immediately, the system will prompt for a restart. Restart your computer and check the system status.
 
 Voila! Your trial period has been extended to more 30 days. You can apply this command only three times. So here you can extend your trial period to maximum 90 day.
@@ -32,6 +38,8 @@ There is a registry tweak by which you can increase the boundary of using ```slm
 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SoftwareProtectionPlatform
 
 3. In the right pane, find out the value SkipRearm. Now double-click on it and change the value from 0 to 1. Press ‘OK’.
+
+![windows-7-registry](https://cloud.githubusercontent.com/assets/139233/4180135/b18d6d6c-36e8-11e4-8ced-1f0f5d1fa314.png)
 
 You are done! Now you can apply the slmgr -rearm command for 8 times more. So, you can extend the trial period to extra 240 days.
 
