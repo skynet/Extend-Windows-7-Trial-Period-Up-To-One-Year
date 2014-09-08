@@ -13,17 +13,17 @@ Below is the method in details for both the Windows 7 32-Bit And 64-bit Version.
 
 ## Command Prompt Tricks to Extend Windows 7 Trial Period
 
-* Type ```cmd``` in the Windows 7 start menu search box then right click on ‘Command Prompt’ and chose ‘Run as administrator’. You can also run the command prompt as administrator by typing “cmd” in the start menu search box and then pressing the ```Shift + Ctrl + Enter``` key combination from the keyboard.
+Type ```cmd``` in the Windows 7 start menu search box then right click on ‘Command Prompt’ and chose ‘Run as administrator’. You can also run the command prompt as administrator by typing “cmd” in the start menu search box and then pressing the ```Shift + Ctrl + Enter``` key combination from the keyboard.
 
 ![windows-7-command-prompt](https://cloud.githubusercontent.com/assets/139233/4180133/a8ece7a0-36e8-11e4-85c7-bd2fbfe824aa.png)
 
 Note: You may be asked for a password. If so then put it and hit ‘Enter’.
 
-* In the command prompt, type the following command: ```slmgr -rearm```
+In the command prompt, type the following command: ```slmgr -rearm```
 
 ![windows-7-command](https://cloud.githubusercontent.com/assets/139233/4180134/aef28006-36e8-11e4-84ec-e957378e9c43.png)
 
-* Immediately, the system will prompt for a restart. Restart your computer and check the system status.
+Immediately, the system will prompt for a restart. Restart your computer and check the system status.
 
 Voila! Your trial period has been extended to more 30 days. You can apply this command only three times. So here you can extend your trial period to maximum 90 day.
 
@@ -31,13 +31,13 @@ Voila! Your trial period has been extended to more 30 days. You can apply this c
 
 There is a registry tweak by which you can increase the boundary of using ```slmgr -rearm``` command. As this tweak is about to edit your registry, I recommend to keep a backup of your registry.
 
-* Type “regedit” in the start menu search box and hit ‘Enter’. The registry editor will open. You may be prompted for permission to access the registry editor.
+Type “regedit” in the start menu search box and hit ‘Enter’. The registry editor will open. You may be prompted for permission to access the registry editor.
 
-* Navigate to the following path at the registry editor from the left sidebar.
+Navigate to the following path at the registry editor from the left sidebar.
 
 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SoftwareProtectionPlatform
 
-* In the right pane, find out the value SkipRearm. Now double-click on it and change the value from 0 to 1. Press ‘OK’.
+In the right pane, find out the value SkipRearm. Now double-click on it and change the value from 0 to 1. Press ‘OK’.
 
 ![windows-7-registry](https://cloud.githubusercontent.com/assets/139233/4180135/b18d6d6c-36e8-11e4-8ced-1f0f5d1fa314.png)
 
